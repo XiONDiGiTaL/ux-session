@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leap Buddies — moved to /leapbuddies/</title>
+<link rel="canonical" href="https://xiondigital.net/leapbuddies/">
+<meta http-equiv="refresh" content="0; url=/leapbuddies/">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#1b1430">
+<style>
+  :root { color-scheme: dark; }
+  body {
+    margin: 0; min-height: 100vh; display: grid; place-items: center;
+    background: #1b1430; color: #f6f1e7;
+    font: 16px/1.5 ui-sans-serif, system-ui, "Segoe UI", Roboto, sans-serif;
+    text-align: center; padding: 24px;
+  }
+  .cubes { display: flex; gap: 8px; justify-content: center; margin-bottom: 18px; }
+  .cubes span { width: 22px; height: 22px; border-radius: 5px; display: block; }
+  .c1 { background: #ffb84d; } .c2 { background: #46d6c6; } .c3 { background: #ff7a59; }
+  h1 { font-size: 22px; letter-spacing: 1px; margin: 0 0 8px; }
+  p { margin: 0; color: #b9b0cf; }
+  a { color: #ffd08a; }
+</style>
+</head>
+<body>
+  <main>
+    <div class="cubes" aria-hidden="true"><span class="c1"></span><span class="c2"></span><span class="c3"></span></div>
+    <h1>Leap Buddies has moved</h1>
+    <p>Taking you to <a href="/leapbuddies/">xiondigital.net/leapbuddies/</a>&nbsp;…</p>
+  </main>
+<script>
+/* Keep the old address working, including invite links: the query string
+ * (?room=ABCDE) and any hash follow the player to the new URL. */
+(function () {
+  var tail = (location.search || '') + (location.hash || '');
+  location.replace('/leapbuddies/' + tail);
+})();
+</script>
+</body>
+</html>
